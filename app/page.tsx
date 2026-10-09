@@ -1,17 +1,17 @@
 const projects = [
   {
     number: "01",
-    type: "Code",
-    title: "Learn, build, repeat.",
+    type: "Software engineering",
+    title: "Building useful systems.",
     description:
-      "A place to share the projects, experiments, and ideas that keep me curious.",
+      "An experienced software engineer focused on practical, reliable work and the people it serves.",
   },
   {
     number: "02",
-    type: "Photo journal",
-    title: "Travel, one frame at a time.",
+    type: "AI research",
+    title: "AI for software engineering.",
     description:
-      "Photographs from the road and the everyday moments worth remembering.",
+      "Exploring how AI can help engineers develop, evaluate, and improve software.",
   },
 ];
 
@@ -28,49 +28,50 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Justin Chew home">
-          boijustin<span>.</span>
+          Justin Chew<span>.</span>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#about">About me</a>
-          <a href="#work">Photo journal</a>
-          <a href="#contact">Contact me</a>
+          <a href="#about">About</a>
+          <a href="#work">Experience</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <section className="hero" id="top" aria-labelledby="hero-heading">
         <div className="hero-copy">
-          <p className="eyebrow">Seattle, WA</p>
+          <p className="eyebrow">Software engineer at Microsoft</p>
           <h1 id="hero-heading">Justin Chew.</h1>
           <p className="hero-intro">
-            Code, travel, photograph, repeat.
+            Building thoughtful software and exploring how AI can help engineers work better.
           </p>
           <a className="text-link" href="#work">
-            Explore my interests <ArrowUpRight />
+            Explore my experience <ArrowUpRight />
           </a>
         </div>
         <div className="hero-art" aria-hidden="true">
           <div className="sun" />
           <div className="horizon horizon-one" />
           <div className="horizon horizon-two" />
-          <p>boijustin / Seattle</p>
+          <p>Software + AI</p>
         </div>
       </section>
 
       <section className="statement" id="about" aria-labelledby="about-heading">
-        <p className="eyebrow">Who am I?</p>
+        <p className="eyebrow">About</p>
         <div>
-          <h2 id="about-heading">A Seattleite looking for a place to showcase hobbies and interests.</h2>
+          <h2 id="about-heading">An experienced software engineer with a focus on useful, durable work.</h2>
           <p>
-            This is a home for the things I&apos;m learning, the places I travel, and the photographs
-            I make along the way.
+            My work spans software engineering and AI research for software engineering. I studied
+            at Georgia Institute of Technology and care about strong technical foundations, practical
+            tools, and the people who use them.
           </p>
         </div>
       </section>
 
       <section className="work" id="work" aria-labelledby="work-heading">
         <div className="section-heading">
-          <p className="eyebrow">Code · Travel · Photograph</p>
-          <h2 id="work-heading">A place to explore.</h2>
+          <p className="eyebrow">Experience</p>
+          <h2 id="work-heading">Work in software and AI.</h2>
         </div>
         <div className="project-grid">
           {projects.map((project) => (
@@ -88,11 +89,11 @@ export default function Home() {
       </section>
 
       <section className="contact" id="contact" aria-labelledby="contact-heading">
-        <p className="eyebrow">Contact me</p>
+        <p className="eyebrow">Contact</p>
         <h2 id="contact-heading">Let&apos;s keep in touch.</h2>
         <a
           className="contact-link"
-          href="https://www.linkedin.com/pub/justin-chew/75/3a6/311"
+          href="https://www.linkedin.com/in/justin-chew-3113a675/"
           rel="noreferrer"
           target="_blank"
         >
@@ -101,8 +102,8 @@ export default function Home() {
       </section>
 
       <footer>
-        <p>© {new Date().getFullYear()} boijustin.</p>
-        <a href="https://www.linkedin.com/pub/justin-chew/75/3a6/311" rel="noreferrer" target="_blank">
+        <p>© {new Date().getFullYear()} Justin Chew</p>
+        <a href="https://www.linkedin.com/in/justin-chew-3113a675/" rel="noreferrer" target="_blank">
           LinkedIn <ArrowUpRight />
         </a>
       </footer>
