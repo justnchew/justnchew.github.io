@@ -1,17 +1,17 @@
 const projects = [
   {
     number: "01",
-    type: "Selected work",
-    title: "A home for the things I make.",
+    type: "Software engineering",
+    title: "Building useful systems.",
     description:
-      "A focused portfolio format for the projects, experiments, and ideas worth sharing.",
+      "An experienced software engineer focused on practical, reliable work and the people it serves.",
   },
   {
     number: "02",
-    type: "Photo journal",
-    title: "Small moments, kept close.",
+    type: "AI research",
+    title: "AI for software engineering.",
     description:
-      "A calmer place for photographs from the road and ordinary days in between.",
+      "Exploring how AI can help engineers develop, evaluate, and improve software.",
   },
 ];
 
@@ -28,50 +28,50 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Justin Chew home">
-          JC<span>.</span>
+          Justin Chew<span>.</span>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#work">Work</a>
           <a href="#about">About</a>
+          <a href="#work">Experience</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <section className="hero" id="top" aria-labelledby="hero-heading">
         <div className="hero-copy">
-          <p className="eyebrow">Independent builder · Seattle, WA</p>
-          <h1 id="hero-heading">Making room for curious work and a well-lived life.</h1>
+          <p className="eyebrow">Software engineer at Microsoft</p>
+          <h1 id="hero-heading">Justin Chew.</h1>
           <p className="hero-intro">
-            I&apos;m Justin Chew. I build useful things, wander with a camera, and collect the
-            stories that happen along the way.
+            Building thoughtful software and exploring how AI can help engineers work better.
           </p>
           <a className="text-link" href="#work">
-            Explore my work <ArrowUpRight />
+            Explore my experience <ArrowUpRight />
           </a>
         </div>
         <div className="hero-art" aria-hidden="true">
           <div className="sun" />
           <div className="horizon horizon-one" />
           <div className="horizon horizon-two" />
-          <p>J.C. / 2026</p>
+          <p>Software + AI</p>
         </div>
       </section>
 
       <section className="statement" id="about" aria-labelledby="about-heading">
         <p className="eyebrow">About</p>
         <div>
-          <h2 id="about-heading">Part maker, part observer, always learning.</h2>
+          <h2 id="about-heading">An experienced software engineer with a focus on useful, durable work.</h2>
           <p>
-            This site is a living notebook for my work and the places that shape it. Expect
-            practical projects, quiet photographs, and ideas still finding their form.
+            My work spans software engineering and AI research for software engineering. I studied
+            at Georgia Institute of Technology and care about strong technical foundations, practical
+            tools, and the people who use them.
           </p>
         </div>
       </section>
 
       <section className="work" id="work" aria-labelledby="work-heading">
         <div className="section-heading">
-          <p className="eyebrow">What&apos;s here</p>
-          <h2 id="work-heading">A fresh beginning.</h2>
+          <p className="eyebrow">Experience</p>
+          <h2 id="work-heading">Work in software and AI.</h2>
         </div>
         <div className="project-grid">
           {projects.map((project) => (
@@ -89,16 +89,21 @@ export default function Home() {
       </section>
 
       <section className="contact" id="contact" aria-labelledby="contact-heading">
-        <p className="eyebrow">Keep in touch</p>
-        <h2 id="contact-heading">Have something in mind?</h2>
-        <a className="contact-link" href="mailto:hello@justnchew.com">
-          Let&apos;s talk <ArrowUpRight />
+        <p className="eyebrow">Contact</p>
+        <h2 id="contact-heading">Let&apos;s keep in touch.</h2>
+        <a
+          className="contact-link"
+          href="https://www.linkedin.com/in/justin-chew-3113a675/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Find me on LinkedIn <ArrowUpRight />
         </a>
       </section>
 
       <footer>
         <p>© {new Date().getFullYear()} Justin Chew</p>
-        <a href="https://www.linkedin.com/in/justnchew/" rel="noreferrer" target="_blank">
+        <a href="https://www.linkedin.com/in/justin-chew-3113a675/" rel="noreferrer" target="_blank">
           LinkedIn <ArrowUpRight />
         </a>
       </footer>
