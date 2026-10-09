@@ -1,17 +1,17 @@
 const projects = [
   {
     number: "01",
-    type: "Selected work",
-    title: "A home for the things I make.",
+    type: "Code",
+    title: "Learn, build, repeat.",
     description:
-      "A focused portfolio format for the projects, experiments, and ideas worth sharing.",
+      "A place to share the projects, experiments, and ideas that keep me curious.",
   },
   {
     number: "02",
     type: "Photo journal",
-    title: "Small moments, kept close.",
+    title: "Travel, one frame at a time.",
     description:
-      "A calmer place for photographs from the road and ordinary days in between.",
+      "Photographs from the road and the everyday moments worth remembering.",
   },
 ];
 
@@ -28,50 +28,49 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="Justin Chew home">
-          JC<span>.</span>
+          boijustin<span>.</span>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#work">Work</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="#about">About me</a>
+          <a href="#work">Photo journal</a>
+          <a href="#contact">Contact me</a>
         </nav>
       </header>
 
       <section className="hero" id="top" aria-labelledby="hero-heading">
         <div className="hero-copy">
-          <p className="eyebrow">Independent builder · Seattle, WA</p>
-          <h1 id="hero-heading">Making room for curious work and a well-lived life.</h1>
+          <p className="eyebrow">Seattle, WA</p>
+          <h1 id="hero-heading">Justin Chew.</h1>
           <p className="hero-intro">
-            I&apos;m Justin Chew. I build useful things, wander with a camera, and collect the
-            stories that happen along the way.
+            Code, travel, photograph, repeat.
           </p>
           <a className="text-link" href="#work">
-            Explore my work <ArrowUpRight />
+            Explore my interests <ArrowUpRight />
           </a>
         </div>
         <div className="hero-art" aria-hidden="true">
           <div className="sun" />
           <div className="horizon horizon-one" />
           <div className="horizon horizon-two" />
-          <p>J.C. / 2026</p>
+          <p>boijustin / Seattle</p>
         </div>
       </section>
 
       <section className="statement" id="about" aria-labelledby="about-heading">
-        <p className="eyebrow">About</p>
+        <p className="eyebrow">Who am I?</p>
         <div>
-          <h2 id="about-heading">Part maker, part observer, always learning.</h2>
+          <h2 id="about-heading">A Seattleite looking for a place to showcase hobbies and interests.</h2>
           <p>
-            This site is a living notebook for my work and the places that shape it. Expect
-            practical projects, quiet photographs, and ideas still finding their form.
+            This is a home for the things I&apos;m learning, the places I travel, and the photographs
+            I make along the way.
           </p>
         </div>
       </section>
 
       <section className="work" id="work" aria-labelledby="work-heading">
         <div className="section-heading">
-          <p className="eyebrow">What&apos;s here</p>
-          <h2 id="work-heading">A fresh beginning.</h2>
+          <p className="eyebrow">Code · Travel · Photograph</p>
+          <h2 id="work-heading">A place to explore.</h2>
         </div>
         <div className="project-grid">
           {projects.map((project) => (
@@ -89,16 +88,21 @@ export default function Home() {
       </section>
 
       <section className="contact" id="contact" aria-labelledby="contact-heading">
-        <p className="eyebrow">Keep in touch</p>
-        <h2 id="contact-heading">Have something in mind?</h2>
-        <a className="contact-link" href="mailto:hello@justnchew.com">
-          Let&apos;s talk <ArrowUpRight />
+        <p className="eyebrow">Contact me</p>
+        <h2 id="contact-heading">Let&apos;s keep in touch.</h2>
+        <a
+          className="contact-link"
+          href="https://www.linkedin.com/pub/justin-chew/75/3a6/311"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Find me on LinkedIn <ArrowUpRight />
         </a>
       </section>
 
       <footer>
-        <p>© {new Date().getFullYear()} Justin Chew</p>
-        <a href="https://www.linkedin.com/in/justnchew/" rel="noreferrer" target="_blank">
+        <p>© {new Date().getFullYear()} boijustin.</p>
+        <a href="https://www.linkedin.com/pub/justin-chew/75/3a6/311" rel="noreferrer" target="_blank">
           LinkedIn <ArrowUpRight />
         </a>
       </footer>
